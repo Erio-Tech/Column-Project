@@ -1,0 +1,336 @@
+:root {
+	--Softviolet: hsl(277, 64%, 61%);
+	--cardbackground: hsl(244, 38%, 16%);
+	--mainbackg: hsl(233, 47%, 7%);
+	--primary: hsl(0, 0%, 100%);
+	--secondary: hsla(0, 0%, 100%, 0.75);
+	--light: hsla(0, 0%, 100%, 0.6);
+}
+
+html {
+	box-sizing: border-box;
+	font-family: 'Lexend Deca', sans-serif;
+	color: var(--mainbackg);
+}
+body {
+	background: var(--mainbackg);
+	margin: 0;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+	height: auto;
+}
+
+
+/* Mobile*/  
+@media only screen   
+and (min-device-width : 360px)   
+and (max-device-width : 640px)  
+{ 
+.container{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows:repeat(2, 1fr);
+}
+.intro{background: var(--cardbackground);
+
+margin: -4em 2em 2em;
+grid-column: 1/2;
+}
+
+.intro h1 {
+    font-size: 2rem;
+	color: var(--primary);
+	padding: 1rem 2rem 0 2rem;
+	font-family: 'Lexend Deca';
+	font-weight: 700;
+    max-width:100% ;
+}
+.intro p{
+   color: var(--secondary);
+	font-size: 1.1rem;
+	padding:5px 0 65px 25px;
+	font-family: 'Lexend Deca';
+	font-weight: 400; 
+    line-height: 2;
+}
+h1{
+color:var(--primary)
+}
+h2{
+    color: var(--primary);
+}
+p{
+    color: var(--secondary);
+}
+.word{color: var(--Softviolet);}
+
+.image{
+  	background: linear-gradient(rgba(154, 11, 211, 0.219), #ac12df6b),
+		url(images/image-header-mobile.jpg);
+	background-size: cover;
+	background-position: center;
+    margin: 27em 2em 2em;
+    
+}
+
+
+.progress{
+display: grid;
+grid-template-columns: 3, 1fr;
+}
+.pro h2{
+font-size: 1.8rem;
+line-height: 0.2;
+text-align: center;
+}
+
+.pro p{
+    color: var(--light);
+    text-transform: uppercase;
+	padding-top: 1rem;
+	font-size: 1.3rem;
+    text-align: center;
+    padding-bottom: 2em;
+}
+.temp h2{
+font-size: 1.8rem;
+line-height: 0.2;
+text-align: center;
+}
+.temp p{
+     color: var(--light);
+     text-transform: uppercase;
+	padding-top: 1rem;
+	font-size: 1.3rem;
+    text-align: center;
+    padding-bottom: 2em;
+}
+.quer h2{
+font-size: 1.8rem;
+line-height: 0.2;
+text-align: center;
+}
+.quer p {
+     color: var(--light);
+     text-transform: uppercase;
+	padding-top: 1rem;
+	font-size: 1.3rem;
+    text-align: center;
+padding-bottom: 2em;
+}
+ } 
+
+    
+/* I Pad */
+@media only screen   
+and (orientation : portrait)   
+and (-webkit-min-device-pixel-ratio: 1)   
+and (min-device-width : 768px)   
+and (max-device-width : 1024px)  
+
+{ 
+.container{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows:repeat(2, 1fr);
+}
+.intro{background: var(--cardbackground);
+
+margin: -4em 2em 2em;
+grid-column: 1/2;
+}
+
+.intro h1 {
+    font-size: 4rem;
+	color: var(--primary);
+	padding: 1rem 2rem 0 2rem;
+	font-family: 'Lexend Deca';
+	font-weight: 700;
+    max-width:100% ;
+}
+.intro p{
+   color: var(--secondary);
+	font-size: 2.3rem;
+	padding:5px 0 65px 25px;
+	font-family: 'Lexend Deca';
+	font-weight: 400; 
+    line-height: 2;
+}
+h1{
+color:var(--primary)
+}
+h2{
+    color: var(--primary);
+}
+p{
+    color: var(--secondary);
+}
+.word{color: var(--Softviolet);}
+
+.image {
+background: linear-gradient(rgba(154, 11, 211, 0.219), #ac12df6b),
+		url(images/image-header-mobile.jpg);
+	background-size: cover;
+	background-position: center;
+    margin: 28em 2em 2em;
+    
+}
+
+
+.progress {
+display: grid;
+grid-template-columns: 3, 1fr;
+}
+.pro h2 {
+font-size: 2.5rem;
+line-height: 0.2;
+text-align: center;
+}
+
+.pro p{
+    color: var(--light);
+    text-transform: uppercase;
+	padding-top: 1rem;
+	font-size: 1.9rem;
+    text-align: center;
+    padding-bottom: 2em;
+}
+.temp h2{
+font-size: 2.5rem;
+line-height: 0.2;
+text-align: center;
+}
+.temp p{
+    color: var(--light);
+    text-transform: uppercase;
+	padding-top: 1rem;
+	font-size: 1.9rem;
+    text-align: center;
+    padding-bottom: 2em;
+}
+.quer h2{
+font-size: 2.5rem;
+line-height: 0.2;
+text-align: center;
+}
+.quer p {
+     color: var(--light);
+     text-transform: uppercase;
+	padding-top: 1rem;
+	font-size: 1.9rem;
+    text-align: center;
+padding-bottom: 2em;
+}
+} 
+
+/* For Lap-Top 1366 Resolution */  
+ 
+@media only screen   
+and (min-width: 1030px)   
+and (max-width: 1366px)  
+{  
+
+h1{
+color:var(--primary)
+}
+h2{
+    color: var(--primary);
+}
+p{
+    color: var(--secondary);
+}
+
+.container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows:400px ;padding: 5em 3em 6em 13em;
+    max-width: 70%;
+    justify-content: center;
+    align-content: center;
+}
+
+.intro {
+	background: var(--cardbackground);
+     grid-row: 1/2;
+
+	
+}
+
+.image {
+	background: linear-gradient(rgba(154, 11, 211, 0.219), #ac12df6b),
+		url(images/image-header-mobile.jpg);
+	background-size: cover;
+	background-position: center;
+	
+
+}
+.intro h1 {
+	font-size: 2em;
+	color: var(--primary);
+	padding-left: 28px;
+	font-family: 'Lexend Deca';
+	font-weight: 700;
+}
+.intro p {
+	color: var(--secondary);
+	font-size: 1.2rem;
+	padding-left: 35px;
+	font-family: 'Lexend Deca';
+	font-weight: 400;
+}
+.word {
+	color: var(--Softviolet);
+}
+
+
+
+.Progress {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	color: var(--light);
+	padding: 2em;
+}
+
+
+.pro h2 {
+	color: var(--primary);
+	font-size: 1.3em;
+	line-height: 0.2;
+}
+.pro p {
+	text-transform: uppercase;
+	position: relative;
+	right: 35px;
+	padding-top: 1em;
+	font-size: 0.7rem;
+}
+
+.temp h2 {
+	color: var(--primary);
+	font-size: 1.3em;
+	line-height: 0.2;
+}
+.temp p {
+	text-transform: uppercase;
+	position: relative;
+	right: 35px;
+	padding-top: 1rem;
+	font-size: 0.7em;
+}
+.quer h2 {
+	color: var(--primary);
+	font-size: 1.3rem;
+	line-height: 0.2;
+}
+.quer p {
+	text-transform: uppercase;
+	position: relative;
+	right: 35px;
+	padding-top: 1rem;
+	font-size: 0.7rem;
+}
+
+} 
